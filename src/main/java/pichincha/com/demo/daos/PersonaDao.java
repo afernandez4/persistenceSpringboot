@@ -12,4 +12,5 @@ public interface PersonaDao extends JpaRepository<Persona, Integer> {
 	
 	List<Persona> findByNombresAndApellidos(String nombres, String apellidos);
 
+	Persona findById(int id);
 }
